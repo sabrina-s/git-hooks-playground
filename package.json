@@ -4,7 +4,9 @@
   "description": "",
   "scripts": {
     "start": "node src/index.js",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "lint:fix": "npm run lint -- --fix",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "Sabrina Sulong",
@@ -13,6 +15,7 @@
     "eslint": "^7.23.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-prettier": "^3.3.1",
+    "husky": "^6.0.0",
     "prettier": "^2.2.1"
   }
 }
